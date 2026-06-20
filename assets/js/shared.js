@@ -55,22 +55,12 @@
       .join("");
   }
 
-  function createProductPack(product) {
-    return `
-      <div class="product-pack" aria-hidden="true">
-        <span class="product-pack__brand">SPICES</span>
-        <span class="product-pack__name">${product.name.split("/")[0].trim()}</span>
-        <span class="product-pack__weight">${product.weight}</span>
-      </div>
-    `;
-  }
-
   function createProductCard(product) {
     return `
       <article class="product-card" style="--product-color: ${product.color}" data-product-id="${product.id}">
         <a class="product-card__image" href="${url(`pages/product.html?id=${product.id}`)}" aria-label="View ${product.name}">
+          <img class="product-card__photo" src="${product.image}" alt="${product.name}" onerror="this.hidden=true" />
           <span class="product-card__badge">${product.badge}</span>
-          ${createProductPack(product)}
         </a>
         <div class="product-card__content">
           <h3 class="product-card__title">
@@ -240,7 +230,7 @@
     if (!product || !quickViewBody || !quickViewModal) return;
     quickViewBody.innerHTML = `
       <div class="quick-view-modal__media" style="--product-color: ${product.color}">
-        ${createProductPack(product)}
+        <img class="quick-view-modal__photo" src="${product.image}" alt="${product.name}" onerror="this.hidden=true" />
       </div>
       <div class="quick-view-modal__details">
         <p class="section-kicker">${categoryLabel(product.category)}</p>
@@ -340,7 +330,6 @@
     categoryLabel,
     createOrderSummary,
     createProductCard,
-    createProductPack,
     money,
     renderCartPage,
     url,

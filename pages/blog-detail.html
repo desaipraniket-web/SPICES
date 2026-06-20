@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Detail | Spices</title>
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body data-page="blog-detail" data-base="..">
+    <div class="announcement-bar">
+      <div class="announcement-bar__track">
+        <span>Free shipping above Rs. 249</span>
+        <span>Freshly packed small batches</span>
+        <span>Extra 10% off on combo packs</span>
+        <span>Cash on delivery available</span>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <button class="site-header__icon-button site-header__menu-toggle" type="button" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <a class="brand-mark" href="../index.html">
+        <span class="brand-mark__name">SPICES</span>
+        <span class="brand-mark__tagline">Fresh Indian Masale</span>
+      </a>
+      <nav class="desktop-navigation" aria-label="Primary navigation">
+        <div class="desktop-navigation__item">
+          <button class="desktop-navigation__link desktop-navigation__link--dropdown" type="button">Shop All</button>
+          <div class="desktop-navigation__dropdown">
+            <a href="shop.html">All Products</a>
+            <a href="category.html?category=powdered">Powdered Spices</a>
+            <a href="category.html?category=blended">Blended Masale</a>
+            <a href="category.html?category=whole">Whole Spices</a>
+            <a href="category.html?category=dry-fruits">Dry Fruits</a>
+            <a href="category.html?category=combo-packs">Combo Packs</a>
+          </div>
+        </div>
+        <a class="desktop-navigation__link" href="blogs.html">Blogs</a>
+        <a class="desktop-navigation__link" href="contact.html">Contact</a>
+        <a class="desktop-navigation__link" href="cart.html">Cart</a>
+      </nav>
+      <div class="site-header__actions">
+        <button class="site-header__icon-button search-toggle" type="button" aria-label="Open search">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.2-4.2m1.2-5.3a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0Z" /></svg>
+        </button>
+        <button class="site-header__icon-button cart-toggle" type="button" aria-label="Open cart">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6h15l-1.5 8.5H8L6 3H3m6 16.5h.1m8.4 0h.1" /></svg>
+          <span class="cart-count">0</span>
+        </button>
+      </div>
+    </header>
+
+    <aside class="mobile-drawer" aria-hidden="true">
+      <div class="mobile-drawer__header">
+        <span>Menu</span>
+        <button class="mobile-drawer__close" type="button" aria-label="Close menu">&times;</button>
+      </div>
+      <nav class="mobile-drawer__navigation" aria-label="Mobile navigation">
+        <a href="shop.html">All Products</a>
+        <a href="category.html?category=powdered">Powdered Spices</a>
+        <a href="category.html?category=blended">Blended Masale</a>
+        <a href="category.html?category=whole">Whole Spices</a>
+        <a href="blogs.html">Blogs</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </aside>
+
+    <div class="search-panel" aria-hidden="true">
+      <div class="search-panel__dialog" role="search">
+        <div class="search-panel__header">
+          <label for="site-search">Search products</label>
+          <button class="search-panel__close" type="button" aria-label="Close search">&times;</button>
+        </div>
+        <input id="site-search" class="search-panel__input" type="search" placeholder="Search haldi, biryani, dry fruits..." />
+        <div class="search-panel__results" aria-live="polite"></div>
+      </div>
+    </div>
+
+    <main class="blog-detail"></main>
+
+    <footer class="site-footer">
+      <div class="site-footer__brand">
+        <a class="brand-mark brand-mark--footer" href="../index.html">
+          <span class="brand-mark__name">SPICES</span>
+          <span class="brand-mark__tagline">Fresh Indian Masale</span>
+        </a>
+        <p>We deliver spices in their freshest form for everyday Indian cooking.</p>
+      </div>
+      <div class="site-footer__links">
+        <h2>Shop Now</h2>
+        <a href="shop.html">All Products</a>
+        <a href="category.html?category=powdered">Powdered Spices</a>
+        <a href="category.html?category=whole">Whole Spices</a>
+      </div>
+      <div class="site-footer__links">
+        <h2>Other</h2>
+        <a href="search.html">Search</a>
+        <a href="blogs.html">Blogs</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="site-footer__marketplaces">
+        <h2>Also available on</h2>
+        <div><span>Amazon</span><span>Flipkart</span><span>Blinkit</span><span>Zepto</span></div>
+      </div>
+      <p class="site-footer__copyright">© 2026, Spices Foods Pvt. Ltd.</p>
+    </footer>
+
+    <aside class="cart-drawer" aria-hidden="true">
+      <div class="cart-drawer__header">
+        <div><span class="section-kicker">Your cart</span><h2>Kitchen Basket</h2></div>
+        <button class="cart-drawer__close" type="button" aria-label="Close cart">&times;</button>
+      </div>
+      <div class="cart-drawer__items"></div>
+      <div class="cart-drawer__empty">Your cart is empty. Add fresh masale to continue.</div>
+      <div class="cart-drawer__summary">
+        <div><span>Subtotal</span><strong class="cart-subtotal">Rs. 0</strong></div>
+        <a class="checkout-button" href="checkout.html">Checkout</a>
+      </div>
+    </aside>
+
+    <div class="quick-view-modal" aria-hidden="true">
+      <div class="quick-view-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="quick-view-title">
+        <button class="quick-view-modal__close" type="button" aria-label="Close quick view">&times;</button>
+        <div class="quick-view-modal__body"></div>
+      </div>
+    </div>
+    <div class="page-overlay" aria-hidden="true"></div>
+
+    <script src="../assets/js/data.js"></script>
+    <script src="../assets/js/shared.js"></script>
+    <script src="../assets/js/app.js"></script>
+  </body>
+</html>

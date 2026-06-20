@@ -19,6 +19,7 @@ window.SPICES_PRODUCTS = [
     weights: ["100g", "200g", "500g"],
     badge: "Fresh",
     color: "#f2b21b",
+    image: "https://images.unsplash.com/photo-1615485500704-8e990f9900f7?auto=format&fit=crop&w=900&q=80",
     description: "Bright haldi powder for daily sabzi, dal, and healthy kitchen use.",
     details: "A clean, warm turmeric powder ground in small batches for rich colour and everyday cooking.",
     ingredients: "Turmeric fingers",
@@ -35,6 +36,7 @@ window.SPICES_PRODUCTS = [
     weights: ["100g", "200g", "500g"],
     badge: "Best seller",
     color: "#8f6b18",
+    image: "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=900&q=80",
     description: "Balanced everyday blend for quick ghar-style vegetables.",
     details: "A practical masala for weekday cooking, balanced for onion-tomato gravies and dry sabzi.",
     ingredients: "Coriander, cumin, chilli, turmeric, dry mango, black pepper, and selected spices",
@@ -51,6 +53,7 @@ window.SPICES_PRODUCTS = [
     weights: ["100g", "200g", "500g"],
     badge: "Aromatic",
     color: "#8dbb38",
+    image: "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=900&q=80",
     description: "Warm, citrusy coriander powder ground for fresh aroma.",
     details: "Coriander powder with a mild citrus note for gravies, vegetables, and spice blends.",
     ingredients: "Coriander seeds",
@@ -67,6 +70,7 @@ window.SPICES_PRODUCTS = [
     weights: ["100g", "200g"],
     badge: "Chef pick",
     color: "#b14d23",
+    image: "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=900&q=80",
     description: "Rich whole-spice blend for layered biryani flavour.",
     details: "Aromatic masala for dum biryani, pulao, and rich rice dishes.",
     ingredients: "Coriander, cumin, bay leaf, cardamom, cinnamon, clove, chilli, and selected spices",
@@ -83,6 +87,7 @@ window.SPICES_PRODUCTS = [
     weights: ["100g", "200g", "500g"],
     badge: "Colour rich",
     color: "#c7361f",
+    image: "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=900&q=80",
     description: "Deep colour and gentle heat for gravies and tadka.",
     details: "A colour-rich chilli powder that adds a warm red tone without harsh heat.",
     ingredients: "Kashmiri red chilli",
@@ -99,6 +104,7 @@ window.SPICES_PRODUCTS = [
     weights: ["100g", "200g"],
     badge: "Slow ground",
     color: "#5c3525",
+    image: "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=900&q=80",
     description: "Aromatic finishing masala for curries, dal, and snacks.",
     details: "A warm finishing blend designed to lift aroma at the end of cooking.",
     ingredients: "Cumin, coriander, black pepper, cardamom, cinnamon, clove, bay leaf, and nutmeg",
@@ -115,6 +121,7 @@ window.SPICES_PRODUCTS = [
     weights: ["100g", "250g", "500g"],
     badge: "Whole spice",
     color: "#9a7b4f",
+    image: "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=900&q=80",
     description: "Clean whole jeera for tadka, rice, raita, and spice mixes.",
     details: "Whole cumin with earthy aroma, cleaned and packed for daily tadka.",
     ingredients: "Whole cumin seeds",
@@ -131,6 +138,7 @@ window.SPICES_PRODUCTS = [
     weights: ["150g", "300g"],
     badge: "Ready fast",
     color: "#db6b28",
+    image: "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=900&q=80",
     description: "Quick gravy base for paneer, vegetables, or chicken.",
     details: "A fast makhani base for rich restaurant-style gravy at home.",
     ingredients: "Tomato powder, cashew, onion, garlic, chilli, coriander, and selected spices",
@@ -147,6 +155,7 @@ window.SPICES_PRODUCTS = [
     weights: ["4 packs"],
     badge: "Value pack",
     color: "#2d6a4f",
+    image: "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=900&q=80",
     description: "Haldi, dhaniya, lal mirch, and sabji masala in one kitchen refill pack.",
     details: "A practical monthly refill combo for daily Indian cooking.",
     ingredients: "Turmeric, coriander, chilli, and mixed spices",
@@ -163,6 +172,7 @@ window.SPICES_PRODUCTS = [
     weights: ["100g", "200g"],
     badge: "Snack",
     color: "#d5963d",
+    image: "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=900&q=80",
     description: "Crunchy roasted cashews with a balanced masala coating.",
     details: "Roasted cashews coated with a balanced spice mix for snacking.",
     ingredients: "Cashews, edible oil, salt, chilli, and mixed spices",
@@ -180,18 +190,180 @@ window.SPICES_RECIPES = [
 
 window.SPICES_BLOGS = [
   {
+    id: "keep-masala-aroma-fresh",
     title: "How to keep masala aroma fresh after opening",
     summary: "Simple storage habits for daily kitchens.",
-    image: "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=700&q=80",
+    date: "June 12, 2026",
+    category: "Storage",
+    readTime: "4 min read",
+    image: "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=1400&q=85",
+    relatedProducts: ["haldi-powder", "garam-masala", "lal-mirch"],
+    content: [
+      {
+        heading: "Why aroma fades",
+        body: "Spice aroma comes from natural oils. Once a pouch is opened, those oils start reacting with air, kitchen heat, moisture, and light. That is why the first week after opening usually smells stronger than the last spoon in an old jar.",
+        tips: [
+          "Do not keep masale near the stove flame or a sunny window.",
+          "Close the pouch immediately after taking out the spice.",
+          "Avoid mixing old masala with a new refill unless both are fresh.",
+        ],
+      },
+      {
+        heading: "Use airtight storage",
+        body: "Keep opened packs sealed properly. If you transfer masale into jars, use dry airtight containers and avoid leaving the lid open while cooking. A small jar that gets refilled often is better than a large jar that remains half empty for weeks.",
+        tips: [
+          "Glass or food-grade steel jars work well for daily use.",
+          "Label the refill date if you buy multiple masale together.",
+          "Keep backup pouches sealed until the current jar is almost finished.",
+        ],
+      },
+      {
+        heading: "Keep spoons dry",
+        body: "A wet spoon can spoil texture and freshness. Use a clean dry spoon every time, especially for haldi, chilli, and garam masala. Moisture can create clumps and dull the natural aroma.",
+        tips: [
+          "Do not sprinkle directly over steaming food from the jar.",
+          "Take masala in a spoon or small bowl first, then add it to the pan.",
+        ],
+      },
+      {
+        heading: "Buy practical pack sizes",
+        body: "For daily cooking, smaller refills often taste better than large packs that stay open for months. If your household uses haldi daily but garam masala occasionally, buy larger haldi packs and smaller garam masala packs.",
+        tips: [
+          "Use high-frequency spices within a month or two.",
+          "Buy aroma-heavy blends like garam masala in smaller packs.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Should spices be kept in the fridge?",
+        answer: "For regular powdered masale, a cool dry cabinet is usually better. Fridge storage can introduce moisture if the jar is opened often.",
+      },
+      {
+        question: "How do I know a masala has lost freshness?",
+        answer: "If the aroma is flat, the colour looks dull, or the powder has hard clumps, it is no longer at its best.",
+      },
+      {
+        question: "Can I store all masale in one masala dabba?",
+        answer: "Yes for daily cooking, but keep the dabba dry and refill small quantities instead of storing the full pack in it.",
+      },
+    ],
   },
   {
+    id: "quick-weekday-gravies",
     title: "Five quick weekday gravies with one base masala",
     summary: "Cook faster without losing flavour depth.",
-    image: "https://images.unsplash.com/photo-1543352634-a1c51d9f1fa7?auto=format&fit=crop&w=700&q=80",
+    date: "June 8, 2026",
+    category: "Recipes",
+    readTime: "5 min read",
+    image: "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=1400&q=85",
+    relatedProducts: ["sabji-masala", "makhani-marinade", "dhaniya-powder"],
+    content: [
+      {
+        heading: "Start with a steady base",
+        body: "A reliable onion-tomato base can become paneer gravy, mixed veg, chole-style curry, or a quick dinner bowl with the right masala balance. Cook the base until oil starts separating slightly; that one step makes the gravy taste deeper.",
+        tips: [
+          "Use medium heat so onions brown evenly.",
+          "Add salt early to help tomatoes break down faster.",
+          "Keep a small batch of cooked base refrigerated for busy weekdays.",
+        ],
+      },
+      {
+        heading: "Use sabji masala for body",
+        body: "Daily sabji masala gives the base a rounded flavour. Add it after tomatoes soften so the spices bloom without burning. If the pan looks dry, add a spoon of water before adding the masala.",
+        tips: [
+          "Use 1 to 1.5 teaspoons for two portions.",
+          "Cook the masala for 30 to 45 seconds before adding vegetables or paneer.",
+        ],
+      },
+      {
+        heading: "Add makhani notes when needed",
+        body: "For richer gravies, use a small amount of makhani marinade with butter or cream. It helps create a restaurant-style finish quickly without building a separate cashew-tomato paste from scratch.",
+        tips: [
+          "Use it for paneer, mushrooms, soya chunks, or chicken.",
+          "Finish with a small knob of butter for a glossy texture.",
+        ],
+      },
+      {
+        heading: "Finish with aroma",
+        body: "A pinch of garam masala in the last minute gives freshness without making the gravy bitter. Let the gravy rest for two minutes after switching off the flame so the aroma settles.",
+        tips: [
+          "Add coriander leaves after turning off the heat.",
+          "For lunch boxes, keep gravy slightly thicker so it travels well.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Can one base work for both veg and non-veg gravy?",
+        answer: "Yes. Keep the base simple, then adjust cooking time and protein separately. Paneer needs only a few minutes, while chicken needs longer simmering.",
+      },
+      {
+        question: "When should I add powdered masala?",
+        answer: "Add it after onions and tomatoes are cooked down. This prevents raw spice taste and reduces the chance of burning.",
+      },
+      {
+        question: "How do I make gravy thicker without cream?",
+        answer: "Use cooked onion paste, cashew paste, or simmer the gravy uncovered for a few extra minutes.",
+      },
+    ],
   },
   {
+    id: "whole-vs-powdered-spices",
     title: "Whole vs powdered spices: when to use what",
     summary: "A practical guide for better tadka and gravies.",
-    image: "https://images.unsplash.com/photo-1604152135912-04a022e23696?auto=format&fit=crop&w=700&q=80",
+    date: "June 2, 2026",
+    category: "Guide",
+    readTime: "4 min read",
+    image: "https://images.unsplash.com/photo-1532336414038-cf19250c5757?auto=format&fit=crop&w=1400&q=85",
+    relatedProducts: ["jeera-whole", "dhaniya-powder", "biryani-masala"],
+    content: [
+      {
+        heading: "Whole spices build the base",
+        body: "Whole spices like jeera release aroma in hot oil and form the first layer of flavour for dal, rice, and curries. They are best used at the start, when oil or ghee is hot enough to wake up their natural oils.",
+        tips: [
+          "Add cumin only after oil is hot, not cold.",
+          "Let whole spices crackle briefly, but do not burn them.",
+        ],
+      },
+      {
+        heading: "Powdered spices blend into gravy",
+        body: "Powdered spices are best when you want flavour to spread evenly through sabzi, curry, marinades, and snacks. They need moisture or fat to bloom, so add them with tomatoes, curd, water, or cooked vegetables.",
+        tips: [
+          "Lower the flame before adding powdered spices.",
+          "Add a splash of water if the masala starts sticking.",
+        ],
+      },
+      {
+        heading: "Use both for depth",
+        body: "A jeera tadka followed by dhaniya powder and a finishing masala gives better depth than using only one form. Whole spices create the first aroma; powdered spices carry the flavour through the dish.",
+        tips: [
+          "Use whole spices for rice, dal, and tadka.",
+          "Use powdered spices for marinades, gravies, and dry sabzi.",
+        ],
+      },
+      {
+        heading: "Store them differently",
+        body: "Whole spices usually hold aroma longer. Powdered spices should be sealed carefully and used within a practical time window. If you grind whole spices at home, grind only what you need for a few weeks.",
+        tips: [
+          "Roast whole spices lightly before grinding for special blends.",
+          "Let roasted spices cool completely before storing.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Are whole spices always better than powdered spices?",
+        answer: "Not always. Whole spices are better for tadka and aroma layers, while powdered spices are better for even flavour in gravy and marinades.",
+      },
+      {
+        question: "Can I grind whole spices at home?",
+        answer: "Yes. Roast lightly, cool fully, and grind in small batches. Store the powder in an airtight jar.",
+      },
+      {
+        question: "Why does powdered masala burn quickly?",
+        answer: "Powdered spices have more surface area and less moisture, so they burn fast on high heat. Lower the flame and add liquid if needed.",
+      },
+    ],
   },
 ];

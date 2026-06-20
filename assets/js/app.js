@@ -46,7 +46,7 @@
           return `
             <article class="recipe-card">
               <a class="recipe-card__media" href="${SpicesStore.url(`pages/product.html?id=${product.id}`)}" style="--product-color: ${product.color}" aria-label="${recipe.title}">
-                ${SpicesStore.createProductPack(product)}
+                <img class="recipe-card__photo" src="${product.image}" alt="${recipe.title}" loading="lazy" onerror="this.hidden=true" />
                 <span class="recipe-card__play">Play</span>
               </a>
               <div class="recipe-card__content">
@@ -91,8 +91,8 @@
     container.innerHTML = `
       <section class="product-detail__main">
         <div class="product-detail__media" style="--product-color: ${product.color}">
+          <img class="product-detail__photo" src="${product.image}" alt="${product.name}" onerror="this.hidden=true" />
           <span class="product-card__badge">${product.badge}</span>
-          ${SpicesStore.createProductPack(product)}
         </div>
         <div class="product-detail__content">
           <p class="section-kicker">${SpicesStore.categoryLabel(product.category)}</p>
@@ -162,13 +162,101 @@
       .map(
         (blog, index) => `
           <article class="blog-card">
-            <div class="blog-card__visual">Note ${String(index + 1).padStart(2, "0")}</div>
-            <h3>${blog.title}</h3>
+            <a class="blog-card__visual" href="${SpicesStore.url(`pages/blog-detail.html?id=${blog.id}`)}" style="--blog-image: url('${blog.image}')">Note ${String(index + 1).padStart(2, "0")}</a>
+            <h3><a href="${SpicesStore.url(`pages/blog-detail.html?id=${blog.id}`)}">${blog.title}</a></h3>
             <p>${blog.summary}</p>
           </article>
         `
       )
       .join("");
+  }
+
+  function renderBlogDetail() {
+    const blog = blogs.find((item) => item.id === getParam("id")) || blogs[0];
+    const container = document.querySelector(".blog-detail");
+    if (!container || !blog) return;
+
+    const relatedProducts = (blog.relatedProducts || [])
+      .map((productId) => products.find((product) => product.id === productId))
+      .filter(Boolean);
+    const relatedBlogs = blogs.filter((item) => item.id !== blog.id).slice(0, 2);
+
+    document.title = `${blog.title} | Spices`;
+    container.innerHTML = `
+      <section class="blog-detail__hero">
+        <p class="section-kicker">${blog.category}</p>
+        <h1>${blog.title}</h1>
+        <p>${blog.summary}</p>
+        <div class="blog-detail__meta">
+          <span>${blog.date}</span>
+          <span>${blog.readTime}</span>
+        </div>
+      </section>
+      <section class="blog-detail__layout">
+        <article class="blog-detail__article">
+          <div class="blog-detail__visual" style="--blog-image: url('${blog.image}')">Spices Note</div>
+          ${blog.content
+            .map(
+              (section) => `
+                <section class="blog-detail__section">
+                  <h2>${section.heading}</h2>
+                  <p>${section.body}</p>
+                  ${
+                    section.tips
+                      ? `<ul class="blog-detail__tips">${section.tips.map((tip) => `<li>${tip}</li>`).join("")}</ul>`
+                      : ""
+                  }
+                </section>
+              `
+            )
+            .join("")}
+          <section class="blog-faq" aria-labelledby="blog-faq-title">
+            <p class="section-kicker">FAQ</p>
+            <h2 id="blog-faq-title">Frequently Asked Questions</h2>
+            <div class="blog-faq__list">
+              ${(blog.faqs || [])
+                .map(
+                  (faq, index) => `
+                    <article class="blog-faq__item ${index === 0 ? "is-open" : ""}">
+                      <button class="blog-faq__question" type="button" aria-expanded="${index === 0 ? "true" : "false"}">
+                        <span>${faq.question}</span>
+                        <span class="blog-faq__icon">+</span>
+                      </button>
+                      <div class="blog-faq__answer">
+                        <p>${faq.answer}</p>
+                      </div>
+                    </article>
+                  `
+                )
+                .join("")}
+            </div>
+          </section>
+        </article>
+        <aside class="blog-detail__sidebar">
+          <div class="blog-detail__panel">
+            <h2>Related Products</h2>
+            <div class="blog-detail__products">
+              ${relatedProducts.map((product) => SpicesStore.createProductCard(product)).join("")}
+            </div>
+          </div>
+          <div class="blog-detail__panel">
+            <h2>More Reads</h2>
+            <div class="blog-detail__more">
+              ${relatedBlogs
+                .map(
+                  (item) => `
+                    <a href="${SpicesStore.url(`pages/blog-detail.html?id=${item.id}`)}">
+                      <strong>${item.title}</strong>
+                      <span>${item.readTime}</span>
+                    </a>
+                  `
+                )
+                .join("")}
+            </div>
+          </div>
+        </aside>
+      </section>
+    `;
   }
 
   function renderCheckout() {
@@ -191,6 +279,13 @@
       if (optionButton) {
         optionButton.parentElement.querySelectorAll("button").forEach((button) => button.classList.remove("is-selected"));
         optionButton.classList.add("is-selected");
+      }
+
+      const faqButton = event.target.closest(".blog-faq__question");
+      if (faqButton) {
+        const item = faqButton.closest(".blog-faq__item");
+        const isOpen = item.classList.toggle("is-open");
+        faqButton.setAttribute("aria-expanded", String(isOpen));
       }
 
       if (event.target.closest("[data-detail-plus]")) {
@@ -226,6 +321,7 @@
   if (page === "cart") renderCartPage();
   if (page === "search") renderSearchPage();
   if (page === "blogs") renderBlogs();
+  if (page === "blog-detail") renderBlogDetail();
   if (page === "checkout") renderCheckout();
   bindPageEvents();
 })();
