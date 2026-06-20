@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spices | Fresh Indian Masale</title>
+    <meta
+      name="description"
+      content="Spices is a premium Indian masala brand with fresh spice blends, whole spices, dry fruits, marinades, and kitchen essentials."
+    />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body data-page="home" data-base=".">
+    <div class="announcement-bar" role="banner">
+      <div class="announcement-bar__track">
+        <span>Free shipping above Rs. 249</span>
+        <span>Freshly packed small batches</span>
+        <span>Extra 10% off on combo packs</span>
+        <span>Cash on delivery available</span>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <button class="site-header__icon-button site-header__menu-toggle" type="button" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <a class="brand-mark" href="index.html" aria-label="Spices home">
+        <span class="brand-mark__name">SPICES</span>
+        <span class="brand-mark__tagline">Fresh Indian Masale</span>
+      </a>
+      <nav class="desktop-navigation" aria-label="Primary navigation">
+        <div class="desktop-navigation__item">
+          <button class="desktop-navigation__link desktop-navigation__link--dropdown" type="button">Shop All</button>
+          <div class="desktop-navigation__dropdown">
+            <a href="pages/shop.html">All Products</a>
+            <a href="pages/category.html?category=powdered">Powdered Spices</a>
+            <a href="pages/category.html?category=blended">Blended Masale</a>
+            <a href="pages/category.html?category=whole">Whole Spices</a>
+            <a href="pages/category.html?category=dry-fruits">Dry Fruits</a>
+            <a href="pages/category.html?category=combo-packs">Combo Packs</a>
+          </div>
+        </div>
+        <div class="desktop-navigation__item">
+          <button class="desktop-navigation__link desktop-navigation__link--dropdown" type="button">Recipes</button>
+          <div class="desktop-navigation__dropdown">
+            <a href="pages/blogs.html">Expert Blogs</a>
+            <a href="pages/category.html?category=marinades">5 Min Marinades</a>
+          </div>
+        </div>
+        <a class="desktop-navigation__link" href="pages/contact.html">Contact</a>
+        <a class="desktop-navigation__link" href="pages/cart.html">Cart</a>
+      </nav>
+      <div class="site-header__actions">
+        <button class="site-header__icon-button search-toggle" type="button" aria-label="Open search">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.2-4.2m1.2-5.3a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0Z" /></svg>
+        </button>
+        <a class="site-header__icon-button account-button" href="pages/contact.html" aria-label="Account">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 21a8 8 0 0 0-16 0m12-13a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z" /></svg>
+        </a>
+        <button class="site-header__icon-button cart-toggle" type="button" aria-label="Open cart">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6h15l-1.5 8.5H8L6 3H3m6 16.5h.1m8.4 0h.1" /></svg>
+          <span class="cart-count">0</span>
+        </button>
+      </div>
+    </header>
+
+    <aside class="mobile-drawer" aria-hidden="true">
+      <div class="mobile-drawer__header">
+        <span>Menu</span>
+        <button class="mobile-drawer__close" type="button" aria-label="Close menu">&times;</button>
+      </div>
+      <nav class="mobile-drawer__navigation" aria-label="Mobile navigation">
+        <a href="pages/shop.html">All Products</a>
+        <a href="pages/category.html?category=powdered">Powdered Spices</a>
+        <a href="pages/category.html?category=blended">Blended Masale</a>
+        <a href="pages/category.html?category=whole">Whole Spices</a>
+        <a href="pages/category.html?category=dry-fruits">Dry Fruits</a>
+        <a href="pages/category.html?category=combo-packs">Combo Packs</a>
+        <a href="pages/blogs.html">Blogs</a>
+        <a href="pages/contact.html">Contact</a>
+      </nav>
+    </aside>
+
+    <div class="search-panel" aria-hidden="true">
+      <div class="search-panel__dialog" role="search">
+        <div class="search-panel__header">
+          <label for="site-search">Search products</label>
+          <button class="search-panel__close" type="button" aria-label="Close search">&times;</button>
+        </div>
+        <input id="site-search" class="search-panel__input" type="search" placeholder="Search haldi, biryani, dry fruits..." />
+        <div class="search-panel__results" aria-live="polite"></div>
+      </div>
+    </div>
+
+    <main>
+      <section class="category-quick-links" aria-label="Shop by category"></section>
+
+      <section class="hero-showcase" aria-labelledby="hero-title">
+        <div class="hero-showcase__content">
+          <p class="section-kicker">Small batch masale</p>
+          <h1 id="hero-title">Fresh spices that make everyday cooking taste complete.</h1>
+          <p>
+            Cleanly sourced whole spices, slow-ground blends, and fast marinades packed for Indian kitchens that cook
+            every day.
+          </p>
+          <div class="hero-showcase__actions">
+            <a class="primary-action" href="pages/shop.html">Shop best sellers</a>
+            <a class="secondary-action" href="pages/contact.html">See our process</a>
+          </div>
+        </div>
+        <div class="hero-showcase__visual" aria-label="Assorted Spices products">
+          <img
+            src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=1200&q=80"
+            alt="Assorted Indian spices in bowls"
+          />
+          <div class="hero-showcase__badge">
+            <strong>12+</strong>
+            <span>fresh blends</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="freshness-marquee" aria-label="Brand promise">
+        <div class="freshness-marquee__track">
+          <span>Zone of Fresh Spices</span>
+          <span>Stone-ground aroma</span>
+          <span>No artificial colour</span>
+          <span>Zip-lock freshness</span>
+        </div>
+      </section>
+
+      <section class="trust-benefits" aria-label="Shopping benefits">
+        <article class="trust-benefits__item"><span class="trust-benefits__icon">OK</span><h2>Fresh Batch</h2><p>Spices packed in controlled small batches.</p></article>
+        <article class="trust-benefits__item"><span class="trust-benefits__icon">*</span><h2>Pure Ingredients</h2><p>No fillers, no artificial colours.</p></article>
+        <article class="trust-benefits__item"><span class="trust-benefits__icon">%</span><h2>Member Offers</h2><p>Save more on monthly kitchen refills.</p></article>
+        <article class="trust-benefits__item"><span class="trust-benefits__icon">GO</span><h2>Fast Delivery</h2><p>Free shipping on orders above Rs. 249.</p></article>
+      </section>
+
+      <section id="popular-products" class="product-showcase" aria-labelledby="popular-products-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">Popular picks</p>
+            <h2 id="popular-products-title">Popular Masale</h2>
+          </div>
+          <div class="product-showcase__controls">
+            <button class="slider-button" type="button" data-slide="prev" aria-label="Previous products">Prev</button>
+            <button class="slider-button" type="button" data-slide="next" aria-label="Next products">Next</button>
+          </div>
+        </div>
+        <div class="product-showcase__grid"></div>
+      </section>
+
+      <section id="brand-story" class="brand-story" aria-labelledby="brand-story-title">
+        <div class="brand-story__image">
+          <img src="https://images.unsplash.com/photo-1532336414038-cf19250c5757?auto=format&fit=crop&w=900&q=80" alt="Fresh spices and herbs on a kitchen table" />
+        </div>
+        <div class="brand-story__content">
+          <p class="section-kicker">Behind the flavour</p>
+          <h2 id="brand-story-title">Spices ka fresh process</h2>
+          <div class="process-grid">
+            <article class="process-grid__item"><span>01</span><h3>Sourcing</h3><p>Whole spices selected from trusted mandi partners.</p></article>
+            <article class="process-grid__item"><span>02</span><h3>Low Heat Grinding</h3><p>Slow grinding helps protect natural oils and aroma.</p></article>
+            <article class="process-grid__item"><span>03</span><h3>Fresh Pack</h3><p>Moisture-safe packs keep the masala kitchen-ready.</p></article>
+            <article class="process-grid__item"><span>04</span><h3>Daily Cooking</h3><p>Balanced blends made for regular ghar ka khana.</p></article>
+          </div>
+          <a class="primary-action" href="pages/contact.html">Know more</a>
+        </div>
+      </section>
+
+      <section class="brand-proof" aria-label="Featured in">
+        <p class="section-kicker">Featured in</p>
+        <div class="brand-proof__logos">
+          <span>FOOD DAILY</span><span>KitchenWire</span><span>Taste Desk</span><span>Retail Now</span><span>FreshCart</span>
+        </div>
+      </section>
+
+      <section class="comparison-panel" aria-labelledby="comparison-title">
+        <div class="comparison-panel__column">
+          <h2 id="comparison-title">Spices Fresh Masale</h2>
+          <ul><li>Low heat grinding</li><li>Batch-wise freshness checks</li><li>Clean zip-lock packaging</li><li>Balanced aroma and colour</li></ul>
+        </div>
+        <div class="comparison-panel__divider">vs</div>
+        <div class="comparison-panel__column comparison-panel__column--muted">
+          <h2>Ordinary Masale</h2>
+          <ul><li>Flat aroma after opening</li><li>Unclear sourcing</li><li>Loose or weak packaging</li><li>Harsh colour and taste</li></ul>
+        </div>
+      </section>
+
+      <section id="recipe-videos" class="recipe-videos" aria-labelledby="recipe-videos-title">
+        <div class="section-heading"><div><p class="section-kicker">Cook faster</p><h2 id="recipe-videos-title">Tasty Moments With Spices</h2></div></div>
+        <div class="recipe-videos__grid"></div>
+      </section>
+
+      <section id="expert-blogs" class="expert-blogs" aria-labelledby="expert-blogs-title">
+        <div class="section-heading"><div><p class="section-kicker">Kitchen notes</p><h2 id="expert-blogs-title">Expert Blogs</h2></div><a class="secondary-action" href="pages/blogs.html">View all</a></div>
+        <div class="expert-blogs__grid"></div>
+      </section>
+    </main>
+
+    <footer id="site-footer" class="site-footer">
+      <div class="site-footer__brand">
+        <a class="brand-mark brand-mark--footer" href="index.html"><span class="brand-mark__name">SPICES</span><span class="brand-mark__tagline">Fresh Indian Masale</span></a>
+        <p>We deliver spices in their freshest form for everyday Indian cooking.</p>
+        <form class="newsletter-form">
+          <label for="newsletter-email">Email</label>
+          <div class="newsletter-form__row"><input id="newsletter-email" type="email" placeholder="you@example.com" required /><button type="submit">Subscribe</button></div>
+          <p class="newsletter-form__message" aria-live="polite"></p>
+        </form>
+      </div>
+      <div class="site-footer__links"><h2>Shop Now</h2><a href="pages/shop.html">All Products</a><a href="pages/category.html?category=powdered">Powdered Spices</a><a href="pages/category.html?category=whole">Whole Spices</a><a href="pages/category.html?category=dry-fruits">Dry Fruits</a><a href="pages/category.html?category=combo-packs">Combo Packs</a></div>
+      <div class="site-footer__links"><h2>Other</h2><a href="pages/contact.html">Quality Assurance</a><a href="pages/search.html">Search</a><a href="pages/blogs.html">Blogs</a><a href="pages/contact.html">Contact</a></div>
+      <div class="site-footer__marketplaces"><h2>Also available on</h2><div><span>Amazon</span><span>Flipkart</span><span>Blinkit</span><span>Zepto</span></div></div>
+      <p class="site-footer__copyright">© 2026, Spices Foods Pvt. Ltd.</p>
+    </footer>
+
+    <aside class="cart-drawer" aria-hidden="true">
+      <div class="cart-drawer__header"><div><span class="section-kicker">Your cart</span><h2>Kitchen Basket</h2></div><button class="cart-drawer__close" type="button" aria-label="Close cart">&times;</button></div>
+      <div class="cart-drawer__items"></div>
+      <div class="cart-drawer__empty">Your cart is empty. Add fresh masale to continue.</div>
+      <div class="cart-drawer__summary"><div><span>Subtotal</span><strong class="cart-subtotal">Rs. 0</strong></div><div><span>Shipping</span><strong class="cart-shipping">Calculated at checkout</strong></div><a class="checkout-button" href="pages/checkout.html">Checkout</a></div>
+    </aside>
+
+    <div class="quick-view-modal" aria-hidden="true"><div class="quick-view-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="quick-view-title"><button class="quick-view-modal__close" type="button" aria-label="Close quick view">&times;</button><div class="quick-view-modal__body"></div></div></div>
+    <div class="page-overlay" aria-hidden="true"></div>
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/shared.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
